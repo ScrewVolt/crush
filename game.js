@@ -80,7 +80,7 @@ const goalDialogues = [
 const bridgeDialogue = "I just needed the courage to cross...";
 
 let currentDialogue = null;
-let dialogueTimer = 0;
+dialogueTimer = 180; // ~3 seconds at 60fps
 let shownGoalDialogueCount = 0;
 
 const goals = [
@@ -226,7 +226,7 @@ function checkGoal() {
       const d = dialogue.find(d => d.x === player.x && d.y === player.y);
       if (d) {
         currentDialogue = d.text;
-        dialogueTimer = 100;
+        dialogueTimer = 180;
       } else if (dialogueTimer > 0) {
         dialogueTimer--;
       }
