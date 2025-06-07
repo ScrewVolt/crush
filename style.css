@@ -1,16 +1,21 @@
 body {
     margin: 0;
-    background: black;
-    display: flex;
+    background: #000;
     overflow: hidden;
+  }
+  .game-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
+  
   canvas {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
     display: block;
-    border: 2px solid #444;
-    image-rendering: pixelated;
+    border: 2px solid #fff;
   }
   #touch-controls {
     position: absolute;
