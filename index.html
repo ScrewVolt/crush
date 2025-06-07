@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze of Darkness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="gameCanvas" ="640" height="320"></canvas>
+  <div id="touch-controls">
+    <button class="arrow up" onclick="movePlayer(0, -1)">▲</button>
+    <div>
+      <button class="arrow left" onclick="movePlayer(-1, 0)">◀</button>
+      <button class="arrow down" onclick="movePlayer(0, 1)">▼</button>
+      <button class="arrow right" onclick="movePlayer(1, 0)">▶</button>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>

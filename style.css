@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  canvas {
+    display: block;
+    border: 2px solid #444;
+    image-rendering: pixelated;
+  }
+  #touch-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Hidden by default, shown only on touch devices */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+  }
+  
+  #touch-controls button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #touch-controls div {
+    display: flex;
+    gap: 10px;
+  }
+  
