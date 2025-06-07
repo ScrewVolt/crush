@@ -242,14 +242,22 @@ function checkGoal() {
     }
   
     if (dialogueTimer > 0 && currentDialogue) {
-      ctx.fillStyle = 'rgba(255,255,255,0.9)';
-      ctx.font = '16px sans-serif';
-      ctx.textAlign = 'center';
-      const isMobile = window.innerWidth <= 768;
-      const dialogueY = isMobile ? canvas.height - 80 : canvas.height - 40;
-      ctx.fillText(currentDialogue, canvas.width / 2, dialogueY);
-
-    }
+        const boxWidth = canvas.width - 40;
+        const boxHeight = 60;
+        const boxX = 20;
+        const boxY = 20;
+      
+        // Background
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+        ctx.fillRect(boxX, boxY, boxWidth, boxHeight);
+      
+        // Text
+        ctx.fillStyle = 'white';
+        ctx.font = '16px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(currentDialogue, canvas.width / 2, boxY + 36);
+      }
+      
   }  
 
 function gameLoop() {
