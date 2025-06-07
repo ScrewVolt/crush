@@ -245,7 +245,10 @@ function checkGoal() {
       ctx.fillStyle = 'rgba(255,255,255,0.9)';
       ctx.font = '16px sans-serif';
       ctx.textAlign = 'center';
-      ctx.fillText(currentDialogue, canvas.width / 2, canvas.height - 40);
+      const isMobile = window.innerWidth <= 768;
+      const dialogueY = isMobile ? canvas.height - 80 : canvas.height - 40;
+      ctx.fillText(currentDialogue, canvas.width / 2, dialogueY);
+
     }
   }  
 
