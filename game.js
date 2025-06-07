@@ -238,7 +238,7 @@ function checkGoal() {
       ctx.textAlign = 'center';
       ctx.fillText("You cleared the path", canvas.width / 2, canvas.height / 2 - 20);
       ctx.fillText("Elizabeth", canvas.width / 2, canvas.height / 2 + 10);
-      ctx.fillText("I like you so... text me back 💛", canvas.width / 2, canvas.height / 2 + 50);
+      ctx.fillText("I like you so... do you feel the same? 💛", canvas.width / 2, canvas.height / 2 + 50);
     }
   
     if (dialogueTimer > 0 && currentDialogue) {
